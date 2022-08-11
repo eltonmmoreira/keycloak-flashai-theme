@@ -28,7 +28,7 @@ body {
     height: 100%;
 }
 .container-login-painel {
-    width: 800px;
+    max-width: 800px;
 }
 .container-login-columns {
     display: grid;
@@ -88,4 +88,21 @@ body {
 #kc-content {
     box-shadow: none;
     padding-top: 0;
+}
+.container-login-empresa-image-mobile {
+    display: none;
+    margin-bottom: 30px;
+    height: 90px;
+}
+
+@media only screen and (max-width:961px) {
+    .container-login-columns {
+        grid-template-columns: 100%;
+    }
+    .container-login-empresa {
+        display: none;
+    }
+    .container-login-empresa-image-mobile {
+        display: block;
+    }
 }

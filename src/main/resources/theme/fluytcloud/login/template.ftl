@@ -48,6 +48,9 @@
                     </div>
                 </div>
                 <div id="kc-container" class="${properties.kcContainerClass!}">
+                    <div class="container-login-empresa-image container-login-empresa-image-mobile">
+                        <img class="logo-fluytcloud" src="${url.resourcesPath}/img/logo_azul.png" alt="Logo fluytcloud ">
+                    </div>
                     <div id="kc-container-wrapper" class="${properties.kcContainerWrapperClass!}">
                         <div id="kc-content" class="mdc-card ${properties.kcContentClass!}">
                             <div id="kc-content-wrapper" class="${properties.kcContentWrapperClass!}">
