@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "fluytcloud",
+        "types": [ "login"]
+    }]
+}

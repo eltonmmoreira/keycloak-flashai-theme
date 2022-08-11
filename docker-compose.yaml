@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  keycloak-custom-theme:
+    image: fluytcloud/keycloak:3.0.1
+    container_name: keycloak-custom-theme
+    restart: unless-stopped
+    env_file:
+      - ./keycloak.env
+    entrypoint: ["/opt/keycloak/bin/kc.sh", "start-dev", "--auto-build"]
+    expose:
+      - 28080
+    ports:
+      - 28080:8080
+#
