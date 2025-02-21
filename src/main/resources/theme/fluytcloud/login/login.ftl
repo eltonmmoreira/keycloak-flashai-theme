@@ -10,7 +10,7 @@
     <#elseif section = "form">
         <#if realm.password>
             <form id="kc-form-login" class="form ${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-                <h2 class="titulo-pagina">${msg("conecteSe")}</h2>
+                <h2 class="titulo-pagina">${msg("FlashAI")}</h2>
                 <div class="username-container ${properties.kcFormGroupClass!}">
                     <div class="${properties.kcInputWrapperClass!}">
                         <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!} <#if usernameEditDisabled??>mdc-text-field--disabled</#if>">
@@ -118,9 +118,16 @@
     <#elseif section = "info" >
         <#if realm.password && social.providers??>
             <div id="kc-social-providers">
-                <ul>
+                <ul style="padding-left: 0;">
                     <#list social.providers as p>
-                        <li><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span class="text">${p.displayName}</span></a></li>
+                        <li style="list-style-type: none">
+                            <a href="${p.loginUrl}"
+                               id="social-${p.alias}"
+                               class="google-btn social ${p.providerId}">
+                                <img src="${url.resourcesPath}/img/google_30x30.png" class="google-icon">
+                                <span class="google-text">${p.displayName}</span>
+                            </a>
+                        </li>
                     </#list>
                 </ul>
             </div>

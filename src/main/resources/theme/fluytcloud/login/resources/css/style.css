@@ -95,6 +95,40 @@ body {
     height: 90px;
 }
 
+.google-btn {
+    width: 93%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover */
+.google-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* Ícone do Google */
+.google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Texto do botão */
+.google-text {
+    font-weight: 500;
+}
+
 @media only screen and (max-width:961px) {
     .container-login-columns {
         grid-template-columns: 100%;

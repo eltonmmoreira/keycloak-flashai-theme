@@ -38,19 +38,8 @@
 
     <div class="container-login">
         <div class="container-login-painel">
-            <div class="container-login-columns">
-                <div class="container-login-empresa">
-                    <div class="container-login-empresa-wrap">
-                        <div class="container-login-empresa-image">
-                            <img class="logo-fluytcloud" src="${url.resourcesPath}/img/logo_branca.png" alt="Logo fluytcloud "/>
-                        </div>
-                        <h1>Uma maneira simples e fácil de gerenciar seu negócio</h1>
-                    </div>
-                </div>
+            <div>
                 <div id="kc-container" class="${properties.kcContainerClass!}">
-                    <div class="container-login-empresa-image container-login-empresa-image-mobile">
-                        <img class="logo-fluytcloud" src="${url.resourcesPath}/img/logo_azul.png" alt="Logo fluytcloud ">
-                    </div>
                     <div id="kc-container-wrapper" class="${properties.kcContainerWrapperClass!}">
                         <div id="kc-content" class="mdc-card ${properties.kcContentClass!}">
                             <div id="kc-content-wrapper" class="${properties.kcContentWrapperClass!}">
@@ -73,7 +62,7 @@
                                 </div>
 
                                 <#if displayInfo>
-                                    <div id="kc-info" class="${properties.kcInfoAreaClass!}">
+                                    <div id="kc-info" class="${properties.kcInfoAreaClass!}" style="padding-top: 15px">
                                         <div id="kc-info-wrapper" class="${properties.kcInfoAreaWrapperClass!}">
                                             <#nested "info">
                                         </div>
